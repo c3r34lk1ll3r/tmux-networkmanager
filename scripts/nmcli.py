@@ -33,13 +33,16 @@ def show_menu():
             line+=typ
         line+=' '+name 
         cmd.append(line)
-        cmd.append(short[index])
+        if index < len(short):
+            cmd.append(short[index])
+            index+=1
+        else:
+            cmd.append("")
         if is_o:
             command = "run -b \"nmcli connection down uuid "+UUID+"\""
         else:
             command = "command-prompt -p \"Secret\" \"run -b \\\"echo -n %% | nmcli connection up uuid "+UUID+" --ask\\\"\""
         cmd.append(command)
-        index+=1
     cmd.append("")
     cmd.append("#[align=centre]Avaliable network")
     cmd.append("")
@@ -60,8 +63,11 @@ def show_menu():
         command+= "green" if is_on else "cyan"
         command+="] "+bars+' '+name+(chan)+'#[align=right]'+speed+' ('+signal+'%)'
         cmd.append(command)
-        cmd.append(short[index])
-        index+=1
+        if index<len(short):
+            cmd.append(short[index])
+            index+=1
+        else:
+            cmd.append("")
         command = "" if is_on else "command-prompt -p \"Passphrase\" \"run -b \\\"nmcli dev wifi connect \'"+name+"\' password \'%%\' \\\"\""
         cmd.append(command)
     # Create tmux menu
