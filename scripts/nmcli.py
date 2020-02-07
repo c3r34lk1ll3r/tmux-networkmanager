@@ -62,7 +62,7 @@ def show_menu():
         cmd.append(command)
         cmd.append(short[index])
         index+=1
-        command = "" if is_on else "command-prompt -p \"Passphrase\" \"run -b \\\" nmcli dev wifi connection "+name+" password %%\\\"\""
+        command = "" if is_on else "command-prompt -p \"Passphrase\" \"run -b \\\"nmcli dev wifi connect \'"+name+"\' password \'%%\' \\\"\""
         cmd.append(command)
     # Create tmux menu
     subprocess.check_output(cmd)
