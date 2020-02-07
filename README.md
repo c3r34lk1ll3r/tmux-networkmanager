@@ -34,7 +34,7 @@ Press Tmux `prefix + N` (for example, `C-b N`) and a menu will compare.
   <img src="https://raw.githubusercontent.com/c3r34lk1ll3r/tmux-networkmanager/master/assets/3ohx2p.gif" alt="tmux-networkmanager"  width=700 height=400>
 </p>
 
-Selecting a __connected__ network, that will be disconnected. Instead, selected a __not connected__ network, that will be connected.
+Selecting a __connected__ network, that will be disconnected. Instead, Selecting a __not connected__ network, that will be connected.
 
 
 ## TODO
