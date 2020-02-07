@@ -38,8 +38,8 @@ Selecting a __connected__ network, that will be disconnected. Instead, selected 
 
 
 ## TODO
-[ ] Better handling of password
-[ ] A lot of testing
+- [ ] Better handling of password
+- [ ] A lot of testing
 
 ## License
 tmux-networkmanager plugin is released under the [MIT License](https://opensource.org/licenses/MIT).
