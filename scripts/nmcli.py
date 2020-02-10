@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import sys
 import subprocess
 from string import ascii_lowercase

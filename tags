@@ -6,5 +6,13 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/42b74d5d/
+Installation	README.md	/^## Installation$/;"	s
+License	README.md	/^## License$/;"	s
+Manual	README.md	/^### Manual$/;"	S
+Requirement	README.md	/^### Requirement$/;"	S
+TMUX Plugin for Network Manager	README.md	/^# TMUX Plugin for Network Manager$/;"	c
+TODO	README.md	/^## TODO$/;"	s
+Usage	README.md	/^## Usage$/;"	s
+With Tmux Plugin Manager	README.md	/^### With Tmux Plugin Manager$/;"	S
 main	tmux-nm.tmux	/^main() {$/;"	f
 show_menu	scripts/nmcli.py	/^def show_menu():$/;"	f
