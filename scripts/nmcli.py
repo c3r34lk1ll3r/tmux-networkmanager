@@ -2,12 +2,12 @@
 
 import sys
 import subprocess
-from string import ascii_lowercase
+from string import ascii_lowercase,ascii_uppercase
 
 def show_menu():
-    short=ascii_lowercase
+    short=ascii_lowercase+ascii_uppercase
     datas=subprocess.check_output(["nmcli","-t","connection","show"])
-    datas=datas.decode('ASCII')
+    datas=datas.decode('UTF-8')
     cmd = ["tmux","display-menu","-T","#[align=centre]Network Manager","-x","R","-y","P"]
     index = 0
     for i in datas.split('\n'):
